@@ -1,0 +1,29 @@
+<h1>Listing tempposts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tempposts.each do |temppost| %>
+      <tr>
+        <td><%= temppost.title %></td>
+        <td><%= temppost.text %></td>
+        <td><%= link_to 'Show', temppost %></td>
+        <td><%= link_to 'Edit', edit_temppost_path(temppost) %></td>
+        <td><%= link_to 'Destroy', temppost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Temppost', new_temppost_path %>

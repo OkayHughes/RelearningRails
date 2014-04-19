@@ -1,0 +1,2 @@
+module TemppostsHelper
+end

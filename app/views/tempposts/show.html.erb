@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @temppost.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @temppost.text %>
+</p>
+
+<%= link_to 'Edit', edit_temppost_path(@temppost) %> |
+<%= link_to 'Back', tempposts_path %>

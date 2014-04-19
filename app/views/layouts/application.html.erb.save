@@ -19,10 +19,6 @@
 <% end %>
 </div>
 </header>
-<p>
-<%= puts @error %>
-<% @error = "" %>
-</p>
 <%= yield %>
 
 </body>
